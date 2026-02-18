@@ -1,0 +1,60 @@
+# Task 1
+'''
+a = input("Ваше имя: ")
+b = input("Фамилия: ")
+c = input("Возраст: ")
+
+print("\nРеализация через format:")
+print ("Ваше имя: {}, Фамилия: {}, Возраст: {} лет".format(a,b,c))
+print("\nРеализация через f-string:")
+print(f"Ваше имя: {a}, Фамилия: {b}, Возраст: {c} лет")
+'''
+
+# Task 2
+"""
+x = input("Введите число: ")
+
+try:
+    if int(x)<=0:
+        print("Ошибка: введено не положительное число")
+    else: 
+        if int(x)%2 == 0:
+            print(f"Число {x} является чётным")
+        else:
+            print(f"Число {x} не является чётным")
+except ValueError:
+    print("Ошибка: введено не число")
+"""
+
+# Task 3
+"""
+age = input("Введите ваш возраст: ")
+
+try:
+    if int(age) < 0:
+        print("Ошибка: возраст не может быть отрицательным!")
+    else:
+        if int(age) >= 18:
+            print("Вы совершеннолетний.")
+        else:
+            print("Вы несовершеннолетний.")
+except ValueError:
+    print("Ошибка: введено не число!")
+"""
+
+# Task 4
+
+
+while True:
+    length = input("Введите число: ")
+    if length == "exit":
+        print("Выход из программы...")
+        break
+    if length.isdigit():
+        print(f"В этом числе {len(length)} цифры.")
+    elif length.lstrip('-').isdigit():
+        print(f"В этом числе {len(length)-1} цифры.")
+    else:
+        print("Ошибка: данные не являются числом")
+
+    
